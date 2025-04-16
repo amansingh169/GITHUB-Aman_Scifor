@@ -1,0 +1,50 @@
+$color1: rgb(255, 55, 95);
+$color2: rgb(45, 85, 0);
+$color3: rgb(196, 166, 0);
+
+body {
+  background-color: black;
+}
+
+.bg-color1 {
+  background-color: $color1;
+}
+.bg-color2 {
+  background-color: $color2;
+}
+.bg-color3 {
+  background-color: $color3;
+}
+
+header {
+  .navbar {
+    border-radius: 0 0 10px 10px;
+
+    @media (max-width: 575px) {
+      border-radius: 0;
+    }
+  }
+}
+
+.main {
+  .row1 {
+    .col-lg {
+      border-radius: 10px;
+    }
+  }
+
+  .row2 {
+    border-radius: 10px;
+    background-color: rgb(0, 119, 255);
+
+    .btn-group {
+      .btn {
+        border: 2px solid rgba(139, 126, 0, 0.557);
+
+        &:nth-child(2) {
+          border-left: 1px solid rgba(139, 126, 0, 0.557);
+        }
+      }
+    }
+  }
+}
