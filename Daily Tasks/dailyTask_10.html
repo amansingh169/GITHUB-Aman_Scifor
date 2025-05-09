@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Fetch api</title>
+  </head>
+  <body>
+    <h1>Learning Fetch api</h1>
+    <button onclick="f1()">click me</button>
+    <script>
+      function f1() {
+        fetch("https://dummyjson.com/products")
+          .then((res) => res.json())
+          .then((data) => console.log(data.products[0]));
+      }
+    </script>
+  </body>
+</html>
